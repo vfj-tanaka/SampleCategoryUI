@@ -16,6 +16,12 @@
 		FC4CFAE628AA41A5003EEF58 /* SampleCategoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4CFAE528AA41A5003EEF58 /* SampleCategoryTests.swift */; };
 		FC4CFAF028AA41A5003EEF58 /* SampleCategoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4CFAEF28AA41A5003EEF58 /* SampleCategoryUITests.swift */; };
 		FC4CFAF228AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4CFAF128AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift */; };
+		FC4CFB0028AA4538003EEF58 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4CFAFE28AA4538003EEF58 /* CategoryCollectionViewCell.swift */; };
+		FC4CFB0128AA4538003EEF58 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC4CFAFF28AA4538003EEF58 /* CategoryCollectionViewCell.xib */; };
+		FCF33CA428AB36C7007552DF /* SubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CA228AB36C7007552DF /* SubCollectionViewCell.swift */; };
+		FCF33CA528AB36C7007552DF /* SubCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF33CA328AB36C7007552DF /* SubCollectionViewCell.xib */; };
+		FCF33CAF28AB676B007552DF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CAE28AB676B007552DF /* CategoryViewController.swift */; };
+		FCF33CB128AB67C4007552DF /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CB028AB67C4007552DF /* SubViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		FC4CFAEB28AA41A5003EEF58 /* SampleCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4CFAEF28AA41A5003EEF58 /* SampleCategoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCategoryUITests.swift; sourceTree = "<group>"; };
 		FC4CFAF128AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCategoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FC4CFAFE28AA4538003EEF58 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC4CFAFF28AA4538003EEF58 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		FCF33CA228AB36C7007552DF /* SubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCollectionViewCell.swift; sourceTree = "<group>"; };
+		FCF33CA328AB36C7007552DF /* SubCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCollectionViewCell.xib; sourceTree = "<group>"; };
+		FCF33CAE28AB676B007552DF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		FCF33CB028AB67C4007552DF /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +113,8 @@
 			children = (
 				FC4CFACE28AA41A4003EEF58 /* AppDelegate.swift */,
 				FC4CFAD028AA41A4003EEF58 /* SceneDelegate.swift */,
-				FC4CFAD228AA41A4003EEF58 /* ViewController.swift */,
-				FC4CFAD428AA41A4003EEF58 /* Main.storyboard */,
+				FCF33CA728AB36E8007552DF /* Controller */,
+				FCF33CA628AB36D0007552DF /* View */,
 				FC4CFAD728AA41A5003EEF58 /* Assets.xcassets */,
 				FC4CFAD928AA41A5003EEF58 /* LaunchScreen.storyboard */,
 				FC4CFADC28AA41A5003EEF58 /* Info.plist */,
@@ -125,6 +137,28 @@
 				FC4CFAF128AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift */,
 			);
 			path = SampleCategoryUITests;
+			sourceTree = "<group>";
+		};
+		FCF33CA628AB36D0007552DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC4CFAFF28AA4538003EEF58 /* CategoryCollectionViewCell.xib */,
+				FC4CFAFE28AA4538003EEF58 /* CategoryCollectionViewCell.swift */,
+				FCF33CA328AB36C7007552DF /* SubCollectionViewCell.xib */,
+				FCF33CA228AB36C7007552DF /* SubCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCF33CA728AB36E8007552DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC4CFAD428AA41A4003EEF58 /* Main.storyboard */,
+				FC4CFAD228AA41A4003EEF58 /* ViewController.swift */,
+				FCF33CAE28AB676B007552DF /* CategoryViewController.swift */,
+				FCF33CB028AB67C4007552DF /* SubViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4CFB0128AA4538003EEF58 /* CategoryCollectionViewCell.xib in Resources */,
 				FC4CFADB28AA41A5003EEF58 /* LaunchScreen.storyboard in Resources */,
 				FC4CFAD828AA41A5003EEF58 /* Assets.xcassets in Resources */,
+				FCF33CA528AB36C7007552DF /* SubCollectionViewCell.xib in Resources */,
 				FC4CFAD628AA41A4003EEF58 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4CFB0028AA4538003EEF58 /* CategoryCollectionViewCell.swift in Sources */,
+				FCF33CAF28AB676B007552DF /* CategoryViewController.swift in Sources */,
+				FCF33CB128AB67C4007552DF /* SubViewController.swift in Sources */,
 				FC4CFAD328AA41A4003EEF58 /* ViewController.swift in Sources */,
 				FC4CFACF28AA41A4003EEF58 /* AppDelegate.swift in Sources */,
 				FC4CFAD128AA41A4003EEF58 /* SceneDelegate.swift in Sources */,
+				FCF33CA428AB36C7007552DF /* SubCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2LPL47T23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleCategory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,6 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D2LPL47T23;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SampleCategory/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
