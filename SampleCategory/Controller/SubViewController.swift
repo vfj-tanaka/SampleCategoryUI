@@ -52,7 +52,7 @@ extension SubViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         
         if let cell = subCollectionView.cellForItem(at: indexPath) as? SubCollectionViewCell {
-            cell.categoryLabel.textColor = .lightGray
+            cell.categoryLabel.textColor = .darkGray
         }
     }
 }
