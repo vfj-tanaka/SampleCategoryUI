@@ -11,6 +11,7 @@ final class SubViewController: UIViewController {
     
     private let subCollectionViewNibName = "SubCollectionViewCell"
     private let subCollectionViewIdentifier = "SubCollectionViewCell"
+    let categories = ["すべてのトップス", "カットソー・Tシャツ", "ニット・セーター"]
     
     @IBOutlet private weak var subCollectionView: UICollectionView! {
         didSet {
@@ -30,12 +31,14 @@ extension SubViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         guard let cell = subCollectionView.dequeueReusableCell(withReuseIdentifier: subCollectionViewIdentifier, for: indexPath) as? SubCollectionViewCell else { return UICollectionViewCell() }
+        let category = categories[indexPath.row]
+        cell.configure(text: category)
         
         return cell
     }

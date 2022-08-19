@@ -64,22 +64,22 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGl-99-Ig0">
-                                <rect key="frame" x="0.0" y="124" width="414" height="224"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="234"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="aL6-qA-UXJ">
-                                        <rect key="frame" x="0.0" y="1" width="414" height="222"/>
+                                        <rect key="frame" x="0.0" y="1" width="414" height="232"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJA-al-lwl">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="120" id="MAd-dt-lZL"/>
+                                                    <constraint firstAttribute="height" constant="130" id="MAd-dt-lZL"/>
                                                 </constraints>
                                                 <connections>
                                                     <segue destination="1TX-TV-WjB" kind="embed" id="dKV-HJ-ore"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGH-hb-gi4">
-                                                <rect key="frame" x="0.0" y="121" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="131" width="414" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="B9K-T1-hZY"/>
                                                 </constraints>
@@ -88,7 +88,7 @@
                                                 </connections>
                                             </containerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="boJ-AK-6qU">
-                                                <rect key="frame" x="0.0" y="172" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="182" width="414" height="50"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="6Ks-xq-NnL">
                                                         <rect key="frame" x="20" y="0.0" width="374" height="50"/>
@@ -209,14 +209,14 @@
             <objects>
                 <viewController storyboardIdentifier="CategoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1TX-TV-WjB" customClass="CategoryViewController" customModule="SampleCategory" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uhA-gc-MG2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZMk-9H-yX6">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vWj-cG-huA">
-                                    <size key="itemSize" width="60" height="120"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="10" id="vWj-cG-huA">
+                                    <size key="itemSize" width="68" height="120"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>

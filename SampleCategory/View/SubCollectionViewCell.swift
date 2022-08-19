@@ -17,4 +17,14 @@ final class SubCollectionViewCell: UICollectionViewCell {
         
         backView.layer.cornerRadius = 15
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+    }
+    
+    func configure(text: String) {
+        
+        categoryLabel.text = text
+    }
 }

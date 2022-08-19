@@ -18,8 +18,17 @@ final class CategoryCollectionViewCell: UICollectionViewCell {
         categoryImageView.backgroundColor = .white
         categoryImageView.layer.borderColor = UIColor.opaqueSeparator.cgColor
         categoryImageView.layer.borderWidth = 1
-        categoryImageView.layer.cornerRadius = 30
+        categoryImageView.layer.cornerRadius = 34
         categoryImageView.layer.masksToBounds = true
     }
-
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+    }
+    
+    func configure(image: String, text: String) {
+        
+        categoryLabel.text = text
+    }
 }

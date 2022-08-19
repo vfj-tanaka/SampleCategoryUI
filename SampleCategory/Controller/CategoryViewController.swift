@@ -11,7 +11,7 @@ final class CategoryViewController: UIViewController {
     
     private let collectionViewNibName = "CategoryCollectionViewCell"
     private let collectionViewIdentifier = "CategoryCollectionViewCell"
-    private let categories = CategoryModel()
+    let categories = ["すべて", "トップス", "インナー・\nルームウェア", "アウトドア・\nレジャー用品", "ビジネス・\nフォーマル", "アウター"]
     
     @IBOutlet private weak var categoryCollectionView: UICollectionView! {
         didSet {
@@ -19,6 +19,7 @@ final class CategoryViewController: UIViewController {
             categoryCollectionView.delegate = self
             categoryCollectionView.register(UINib(nibName: collectionViewNibName, bundle: nil), forCellWithReuseIdentifier: collectionViewIdentifier)
             categoryCollectionView.showsHorizontalScrollIndicator = false
+            
         }
     }
     
@@ -32,14 +33,16 @@ extension CategoryViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return categories.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-            guard let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: collectionViewIdentifier, for: indexPath) as? CategoryCollectionViewCell else { return UICollectionViewCell() }
-            
-            return cell
+        guard let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: collectionViewIdentifier, for: indexPath) as? CategoryCollectionViewCell else { return UICollectionViewCell() }
+        let category = categories[indexPath.row]
+        cell.configure(image: category, text: category)
+        
+        return cell
     }
 }
 

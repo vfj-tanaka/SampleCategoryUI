@@ -25,7 +25,6 @@
 		FCF33CB928AC8818007552DF /* Sub2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CB828AC8818007552DF /* Sub2ViewController.swift */; };
 		FCF33CBC28AC8A46007552DF /* SubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CBA28AC8A46007552DF /* SubTableViewCell.swift */; };
 		FCF33CBD28AC8A46007552DF /* SubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF33CBB28AC8A46007552DF /* SubTableViewCell.xib */; };
-		FCF33CC028AC941D007552DF /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CBF28AC941D007552DF /* CategoryModel.swift */; };
 		FCF33CC728ACF50F007552DF /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CC528ACF50F007552DF /* ListTableViewCell.swift */; };
 		FCF33CC828ACF50F007552DF /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF33CC628ACF50F007552DF /* ListTableViewCell.xib */; };
 		FCF33CCA28ACF62C007552DF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CC928ACF62C007552DF /* ListViewController.swift */; };
@@ -71,7 +70,6 @@
 		FCF33CB828AC8818007552DF /* Sub2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sub2ViewController.swift; sourceTree = "<group>"; };
 		FCF33CBA28AC8A46007552DF /* SubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTableViewCell.swift; sourceTree = "<group>"; };
 		FCF33CBB28AC8A46007552DF /* SubTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubTableViewCell.xib; sourceTree = "<group>"; };
-		FCF33CBF28AC941D007552DF /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		FCF33CC528ACF50F007552DF /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		FCF33CC628ACF50F007552DF /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		FCF33CC928ACF62C007552DF /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 		FCF33CBE28AC93F7007552DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FCF33CBF28AC941D007552DF /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,7 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF33CC028AC941D007552DF /* CategoryModel.swift in Sources */,
 				FC4CFB0028AA4538003EEF58 /* CategoryCollectionViewCell.swift in Sources */,
 				FCF33CAF28AB676B007552DF /* CategoryViewController.swift in Sources */,
 				FCF33CB128AB67C4007552DF /* SubViewController.swift in Sources */,
