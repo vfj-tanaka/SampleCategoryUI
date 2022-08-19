@@ -130,6 +130,7 @@
 				FCF33CBE28AC93F7007552DF /* Model */,
 				FCF33CA628AB36D0007552DF /* View */,
 				FCF33CA728AB36E8007552DF /* Controller */,
+				FCF33CD928AF3B0A007552DF /* Unnecessary */,
 				FC4CFAD728AA41A5003EEF58 /* Assets.xcassets */,
 				FC4CFAD928AA41A5003EEF58 /* LaunchScreen.storyboard */,
 				FC4CFADC28AA41A5003EEF58 /* Info.plist */,
@@ -161,10 +162,6 @@
 				FC4CFAFE28AA4538003EEF58 /* CategoryCollectionViewCell.swift */,
 				FCF33CA328AB36C7007552DF /* SubCollectionViewCell.xib */,
 				FCF33CA228AB36C7007552DF /* SubCollectionViewCell.swift */,
-				FCF33CBB28AC8A46007552DF /* SubTableViewCell.xib */,
-				FCF33CBA28AC8A46007552DF /* SubTableViewCell.swift */,
-				FCF33CC628ACF50F007552DF /* ListTableViewCell.xib */,
-				FCF33CC528ACF50F007552DF /* ListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,8 +173,6 @@
 				FC4CFAD228AA41A4003EEF58 /* ViewController.swift */,
 				FCF33CAE28AB676B007552DF /* CategoryViewController.swift */,
 				FCF33CB028AB67C4007552DF /* SubViewController.swift */,
-				FCF33CB828AC8818007552DF /* Sub2ViewController.swift */,
-				FCF33CC928ACF62C007552DF /* ListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +183,19 @@
 				FCF33CBF28AC941D007552DF /* CategoryModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FCF33CD928AF3B0A007552DF /* Unnecessary */ = {
+			isa = PBXGroup;
+			children = (
+				FCF33CB828AC8818007552DF /* Sub2ViewController.swift */,
+				FCF33CC928ACF62C007552DF /* ListViewController.swift */,
+				FCF33CBB28AC8A46007552DF /* SubTableViewCell.xib */,
+				FCF33CBA28AC8A46007552DF /* SubTableViewCell.swift */,
+				FCF33CC628ACF50F007552DF /* ListTableViewCell.xib */,
+				FCF33CC528ACF50F007552DF /* ListTableViewCell.swift */,
+			);
+			path = Unnecessary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

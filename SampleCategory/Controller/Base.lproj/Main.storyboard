@@ -64,10 +64,10 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGl-99-Ig0">
-                                <rect key="frame" x="0.0" y="124" width="414" height="223"/>
+                                <rect key="frame" x="0.0" y="124" width="414" height="224"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="aL6-qA-UXJ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="222"/>
+                                        <rect key="frame" x="0.0" y="1" width="414" height="222"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJA-al-lwl">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
@@ -138,11 +138,11 @@
                                         <gestureRecognizers/>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.85505486534351538" green="0.84967716178789587" blue="0.860432568899135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.94686965050000005" green="0.94686965050000005" blue="0.94686965050000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="aL6-qA-UXJ" secondAttribute="trailing" id="JeC-It-US7"/>
                                     <constraint firstItem="aL6-qA-UXJ" firstAttribute="leading" secondItem="kGl-99-Ig0" secondAttribute="leading" id="QFB-Op-IZm"/>
-                                    <constraint firstItem="aL6-qA-UXJ" firstAttribute="top" secondItem="kGl-99-Ig0" secondAttribute="top" id="b6h-9R-Cbm"/>
+                                    <constraint firstItem="aL6-qA-UXJ" firstAttribute="top" secondItem="kGl-99-Ig0" secondAttribute="top" constant="1" id="b6h-9R-Cbm"/>
                                     <constraint firstAttribute="bottom" secondItem="aL6-qA-UXJ" secondAttribute="bottom" constant="1" id="iqJ-8z-nPw"/>
                                 </constraints>
                             </view>
@@ -150,7 +150,7 @@
                                 <rect key="frame" x="500" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LBI-EH-GMI">
-                                        <rect key="frame" x="0.0" y="124" width="414" height="738"/>
+                                        <rect key="frame" x="0.0" y="125" width="414" height="737"/>
                                         <subviews>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLz-uf-1NF">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
@@ -162,7 +162,7 @@
                                                 </connections>
                                             </containerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YqY-4c-mMO">
-                                                <rect key="frame" x="0.0" y="500" width="414" height="238"/>
+                                                <rect key="frame" x="0.0" y="500" width="414" height="237"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -202,7 +202,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="513.04347826086962" y="66.964285714285708"/>
+            <point key="canvasLocation" x="359" y="30"/>
         </scene>
         <!--Category View Controller-->
         <scene sceneID="b8n-0k-roz">
@@ -239,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfg-kA-VXS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="-244"/>
+            <point key="canvasLocation" x="1116" y="-231"/>
         </scene>
         <!--Sub View Controller-->
         <scene sceneID="3gL-oy-dhX">
@@ -251,7 +251,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-ZL-Cmw">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.94686965045240734" green="0.94686965045240734" blue="0.94686965045240734" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="M6x-Hf-Uhs">
                                     <size key="itemSize" width="150" height="30"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5S-Eq-q7P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1029" y="-117"/>
+            <point key="canvasLocation" x="1286" y="-50"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="uSh-Xf-jSf">
@@ -315,7 +315,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.85505486529999997" green="0.84967716179999997" blue="0.86043256889999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" red="0.94686965050000005" green="0.94686965050000005" blue="0.94686965050000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstItem="4oB-Tg-AVk" firstAttribute="centerY" secondItem="Jj1-mY-GGM" secondAttribute="centerY" id="NHf-ky-TRq"/>
                                                     <constraint firstItem="e6R-Of-VX2" firstAttribute="leading" secondItem="Jj1-mY-GGM" secondAttribute="leading" constant="10" id="Unb-uI-Is2"/>

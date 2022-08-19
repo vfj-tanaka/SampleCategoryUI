@@ -46,7 +46,6 @@ extension SubViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let cell = subCollectionView.cellForItem(at: indexPath) as? SubCollectionViewCell {
             cell.categoryLabel.textColor = .red
-            cell.borderView.layer.borderColor = UIColor.red.cgColor
         }
     }
     
@@ -54,7 +53,6 @@ extension SubViewController: UICollectionViewDelegate {
         
         if let cell = subCollectionView.cellForItem(at: indexPath) as? SubCollectionViewCell {
             cell.categoryLabel.textColor = .lightGray
-            cell.borderView.layer.borderColor = UIColor.lightGray.cgColor
         }
     }
 }

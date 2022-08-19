@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,7 +30,6 @@
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="1nJ-0E-2gj" firstAttribute="centerY" secondItem="5WY-Ml-4t3" secondAttribute="centerY" id="DfH-AJ-Rih"/>
                                     <constraint firstItem="1nJ-0E-2gj" firstAttribute="leading" secondItem="5WY-Ml-4t3" secondAttribute="leading" constant="20" id="XqF-Gw-GqR"/>
@@ -40,7 +38,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="5WY-Ml-4t3" firstAttribute="centerY" secondItem="g5D-5y-cpW" secondAttribute="centerY" id="9zf-TF-D7z"/>
                             <constraint firstItem="5WY-Ml-4t3" firstAttribute="centerX" secondItem="g5D-5y-cpW" secondAttribute="centerX" id="cr5-yn-aYp"/>
@@ -57,15 +55,10 @@
             </constraints>
             <size key="customSize" width="206" height="88"/>
             <connections>
-                <outlet property="borderView" destination="g5D-5y-cpW" id="TJK-Pk-hcX"/>
+                <outlet property="backView" destination="g5D-5y-cpW" id="PMh-cs-9ov"/>
                 <outlet property="categoryLabel" destination="1nJ-0E-2gj" id="JHu-Sd-g1w"/>
             </connections>
             <point key="canvasLocation" x="250.72463768115944" y="126.5625"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
