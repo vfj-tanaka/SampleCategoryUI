@@ -12,6 +12,13 @@ final class CategoryViewController: UIViewController {
     private let collectionViewNibName = "CategoryCollectionViewCell"
     private let collectionViewIdentifier = "CategoryCollectionViewCell"
     let categories = ["すべて", "トップス", "インナー・\nルームウェア", "アウトドア・\nレジャー用品", "ビジネス・\nフォーマル", "アウター"]
+    let images = ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8ZnPTtNHrn_Cy0pnk8ILrq1McbkTCaIA3w&usqp=CAU",
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8ZnPTtNHrn_Cy0pnk8ILrq1McbkTCaIA3w&usqp=CAU",
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8ZnPTtNHrn_Cy0pnk8ILrq1McbkTCaIA3w&usqp=CAU",
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8ZnPTtNHrn_Cy0pnk8ILrq1McbkTCaIA3w&usqp=CAU",
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8ZnPTtNHrn_Cy0pnk8ILrq1McbkTCaIA3w&usqp=CAU",
+                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_8ZnPTtNHrn_Cy0pnk8ILrq1McbkTCaIA3w&usqp=CAU"
+    ]
     
     @IBOutlet private weak var categoryCollectionView: UICollectionView! {
         didSet {
@@ -19,13 +26,11 @@ final class CategoryViewController: UIViewController {
             categoryCollectionView.delegate = self
             categoryCollectionView.register(UINib(nibName: collectionViewNibName, bundle: nil), forCellWithReuseIdentifier: collectionViewIdentifier)
             categoryCollectionView.showsHorizontalScrollIndicator = false
-            
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
 
@@ -40,7 +45,8 @@ extension CategoryViewController: UICollectionViewDataSource {
         
         guard let cell = categoryCollectionView.dequeueReusableCell(withReuseIdentifier: collectionViewIdentifier, for: indexPath) as? CategoryCollectionViewCell else { return UICollectionViewCell() }
         let category = categories[indexPath.row]
-        cell.configure(image: category, text: category)
+        let image = images[indexPath.row]
+        cell.configure(image: image, text: category)
         
         return cell
     }
@@ -59,7 +65,7 @@ extension CategoryViewController: UICollectionViewDelegate {
         
         if let cell = categoryCollectionView.cellForItem(at: indexPath) as? CategoryCollectionViewCell {
             cell.categoryImageView.layer.borderColor = UIColor.lightGray.cgColor
-            cell.categoryLabel.textColor = .lightGray
+            cell.categoryLabel.textColor = .darkGray
         }
     }
 }
