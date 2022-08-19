@@ -11,6 +11,7 @@ final class CategoryViewController: UIViewController {
     
     private let collectionViewNibName = "CategoryCollectionViewCell"
     private let collectionViewIdentifier = "CategoryCollectionViewCell"
+    private let categories = CategoryModel()
     
     @IBOutlet private weak var categoryCollectionView: UICollectionView! {
         didSet {
