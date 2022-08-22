@@ -69,7 +69,7 @@ extension SubViewController: UICollectionViewDelegateFlowLayout {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 11)
         label.text = category
-        let labelWidth = label.sizeThatFits(CGSize(width: CGFloat.greatestFiniteMagnitude, height: 31)).width + 30
+        let labelWidth = label.sizeThatFits(CGSize(width: CGFloat.greatestFiniteMagnitude, height: 31)).width + 28
         
         return .init(width: labelWidth, height: 31)
     }
