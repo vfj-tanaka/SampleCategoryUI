@@ -19,6 +19,7 @@ final class SubViewController: UIViewController {
             subCollectionView.delegate = self
             subCollectionView.register(UINib(nibName: subCollectionViewNibName, bundle: nil), forCellWithReuseIdentifier: subCollectionViewIdentifier)
             subCollectionView.showsHorizontalScrollIndicator = false
+            subCollectionView.backgroundColor = UIColor(hex: "F3F3F3")
         }
     }
     
@@ -48,14 +49,28 @@ extension SubViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let cell = subCollectionView.cellForItem(at: indexPath) as? SubCollectionViewCell {
-            cell.categoryLabel.textColor = .red
+            cell.categoryLabel.textColor = UIColor(hex: "F44336")
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         
         if let cell = subCollectionView.cellForItem(at: indexPath) as? SubCollectionViewCell {
-            cell.categoryLabel.textColor = .darkGray
+            cell.categoryLabel.textColor = UIColor(hex: "555555")
         }
+    }
+}
+
+extension SubViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let category = categories[indexPath.row]
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 11)
+        label.text = category
+        let labelWidth = label.sizeThatFits(CGSize(width: CGFloat.greatestFiniteMagnitude, height: 31)).width + 30
+        
+        return .init(width: labelWidth, height: 31)
     }
 }

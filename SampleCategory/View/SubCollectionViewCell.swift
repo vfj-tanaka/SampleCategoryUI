@@ -15,7 +15,8 @@ final class SubCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        backView.layer.cornerRadius = 15
+        backView.layer.cornerRadius = 15.5
+        categoryLabel.textColor = UIColor(hex: "555555")
     }
     
     override func prepareForReuse() {

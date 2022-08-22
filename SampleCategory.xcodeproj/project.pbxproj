@@ -18,6 +18,7 @@
 		FC4CFAF228AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4CFAF128AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift */; };
 		FC4CFB0028AA4538003EEF58 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4CFAFE28AA4538003EEF58 /* CategoryCollectionViewCell.swift */; };
 		FC4CFB0128AA4538003EEF58 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC4CFAFF28AA4538003EEF58 /* CategoryCollectionViewCell.xib */; };
+		FC86676728B3633E00A757C6 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC86676628B3633E00A757C6 /* UIColor+.swift */; };
 		FCF33CA428AB36C7007552DF /* SubCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CA228AB36C7007552DF /* SubCollectionViewCell.swift */; };
 		FCF33CA528AB36C7007552DF /* SubCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCF33CA328AB36C7007552DF /* SubCollectionViewCell.xib */; };
 		FCF33CAF28AB676B007552DF /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF33CAE28AB676B007552DF /* CategoryViewController.swift */; };
@@ -64,6 +65,7 @@
 		FC4CFAF128AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCategoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FC4CFAFE28AA4538003EEF58 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC4CFAFF28AA4538003EEF58 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC86676628B3633E00A757C6 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		FCF33CA228AB36C7007552DF /* SubCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCollectionViewCell.swift; sourceTree = "<group>"; };
 		FCF33CA328AB36C7007552DF /* SubCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubCollectionViewCell.xib; sourceTree = "<group>"; };
 		FCF33CAE28AB676B007552DF /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				FCF33CA628AB36D0007552DF /* View */,
 				FCF33CA728AB36E8007552DF /* Controller */,
 				FCF33CD928AF3B0A007552DF /* Unnecessary */,
+				FC86676528B3631300A757C6 /* Utility */,
 				FC4CFAD728AA41A5003EEF58 /* Assets.xcassets */,
 				FC4CFAD928AA41A5003EEF58 /* LaunchScreen.storyboard */,
 				FC4CFADC28AA41A5003EEF58 /* Info.plist */,
@@ -153,6 +156,14 @@
 				FC4CFAF128AA41A5003EEF58 /* SampleCategoryUITestsLaunchTests.swift */,
 			);
 			path = SampleCategoryUITests;
+			sourceTree = "<group>";
+		};
+		FC86676528B3631300A757C6 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FC86676628B3633E00A757C6 /* UIColor+.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		FCF33CA628AB36D0007552DF /* View */ = {
@@ -343,6 +354,7 @@
 				FCF33CB128AB67C4007552DF /* SubViewController.swift in Sources */,
 				FCF33CC728ACF50F007552DF /* ListTableViewCell.swift in Sources */,
 				FC4CFAD328AA41A4003EEF58 /* ViewController.swift in Sources */,
+				FC86676728B3633E00A757C6 /* UIColor+.swift in Sources */,
 				FC4CFACF28AA41A4003EEF58 /* AppDelegate.swift in Sources */,
 				FC4CFAD128AA41A4003EEF58 /* SceneDelegate.swift in Sources */,
 				FCF33CB928AC8818007552DF /* Sub2ViewController.swift in Sources */,

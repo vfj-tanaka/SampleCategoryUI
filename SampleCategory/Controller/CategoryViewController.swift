@@ -55,17 +55,18 @@ extension CategoryViewController: UICollectionViewDataSource {
 extension CategoryViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
         if let cell = categoryCollectionView.cellForItem(at: indexPath) as? CategoryCollectionViewCell {
-            cell.categoryImageView.layer.borderColor = UIColor.red.cgColor
-            cell.categoryLabel.textColor = .red
+            cell.categoryImageView.layer.borderColor = UIColor(hex: "F44336").cgColor
+            cell.categoryLabel.textColor = UIColor(hex: "F44336")
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         
         if let cell = categoryCollectionView.cellForItem(at: indexPath) as? CategoryCollectionViewCell {
-            cell.categoryImageView.layer.borderColor = UIColor.lightGray.cgColor
-            cell.categoryLabel.textColor = .darkGray
+            cell.categoryImageView.layer.borderColor = UIColor(hex: "DDDDDD").cgColor
+            cell.categoryLabel.textColor = UIColor(hex: "555555")
         }
     }
 }

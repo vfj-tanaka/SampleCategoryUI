@@ -10,6 +10,12 @@ import UIKit
 final class ViewController: UIViewController {
     
     @IBOutlet private weak var listContainerView: UIView!
+    @IBOutlet private weak var baseColorView: UIView! {
+        didSet {
+            baseColorView.backgroundColor = UIColor(hex: "F3F3F3")
+        }
+    }
+    
     @IBOutlet private weak var backgroundView: UIView! {
         didSet {
             let tapGestureRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.backTapGesture(_:)))
@@ -28,11 +34,8 @@ final class ViewController: UIViewController {
     @IBOutlet private weak var containerHeight: NSLayoutConstraint!
     @IBOutlet private weak var backgroundViewXConstraint: NSLayoutConstraint!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
     
     private func showList() {

@@ -18,9 +18,10 @@ final class CategoryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        categoryImageView.layer.borderColor = UIColor.opaqueSeparator.cgColor
+        categoryImageView.layer.borderColor = UIColor(hex: "DDDDDD").cgColor
         categoryImageView.layer.borderWidth = 1
-        categoryImageView.layer.cornerRadius = 34
+        categoryImageView.layer.cornerRadius = 35
+        categoryLabel.textColor = UIColor(hex: "555555")
     }
     
     override func prepareForReuse() {
